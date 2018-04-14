@@ -37,6 +37,19 @@
       display: grid;
       grid-gap: 20px;
       border: 10px solid var(--yellow);
+      /* auto-fill
+      grid-template-columns: repeat(auto-fill, 150px);
+      */
+      grid-template-columns: repeat(auto-fit, 150px);
+      /*
+      auto-fit and auto-fill are dif.
+      if use:
+      grid-template-columns: repeat(auto-fill, 150px); 
+      will add last at end if extra space.
+      auto-fit does not do that.
+      try one if doesn't work how you want 
+      it then use the other.
+      */
     }
   </style>
 </body>
