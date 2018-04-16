@@ -71,7 +71,22 @@
       display: grid;
       grid-gap: 20px;
       grid-template-columns: repeat(10, 1fr);
+      /* justify defaults to stretch 
+         justify-items: start, end, center, stretch
+         lookup other properties as well 
+      */
+      justify-items: end;
+      /* use center center for both hor. and vert. center .. such as:
+      place-items: center center; 
+      place-times is shorthand for align-items and justify-itmes both with center property.
+      */
+      align-items: center;
     }
+
+    .itm {
+      background: white;
+    }
+
   </style>
 </body>
 
